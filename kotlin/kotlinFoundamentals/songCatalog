@@ -1,0 +1,24 @@
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+
+class song(val title: String, val artist: String, val yearPublished: Int , val playCount: Int) {
+    
+    
+    val popularity: String = if (playCount >= 1000) {
+        "popular"
+    } else {
+        "unpopular"
+    }
+    
+    fun songDescription () {
+        println("$title, performed by $artist, was released in $yearPublished.")
+    }
+    
+}
+
+fun main() {
+   
+    
+}
